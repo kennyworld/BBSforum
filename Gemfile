@@ -77,6 +77,10 @@ gem 'garelic', '0.0.2'
 
 gem "god"
 
+#Add for fixing " Could not find a JavaScript runtime" error
+gem "execjs"
+gem 'therubyracer' 
+
 group :development, :test do
   gem 'capistrano', '2.9.0', :require => false
   gem 'rvm-capistrano', :require => false
