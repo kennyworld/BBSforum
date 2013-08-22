@@ -92,6 +92,16 @@
     <% end %>
   </script>
   <%= yield :scripts %>
+  <!--start carousel automaticlly-->
+  <script type="text/javascript">
+  $(document).ready(function () {
+      $('#myCarousel').carousel({
+          interval: 3000
+      });
+
+      $('.carousel').carousel('cycle');
+  });
+  </script>
   <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', '<%= Setting.google_analytics_key %>']);

@@ -1,10 +1,9 @@
-<!--
 <div id="ruby-group-promote" class="box">
   <div id="feedGadget">Loading...</div>
 </div>
 
 <% content_for(:scripts) do  %>
-< welcome page sidebar js >
+<!-- welcome page sidebar js -->
 <script src="http://www.google.com/jsapi/?key=<%= Setting.google_js_api_key %>"
   type="text/javascript"></script>
 <%= javascript_include_tag("gfdynamicfeedcontrol") %>
@@ -22,4 +21,3 @@
   google.setOnLoadCallback(showGadget);
 </script>
 <% end %>
--->
