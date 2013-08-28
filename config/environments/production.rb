@@ -7,8 +7,8 @@ RubyChina::Application.configure do
   config.cache_classes = true
 
   # Full error reports are disabled and caching is turned on
-  config.consider_all_requests_local       = true
-  config.action_controller.perform_caching = false
+  config.consider_all_requests_local       = false
+  config.action_controller.perform_caching = true
 
   # Specifies the header that your server uses for sending files
   config.action_dispatch.x_sendfile_header = "X-Sendfile"
@@ -60,7 +60,9 @@ RubyChina::Application.configure do
   config.assets.digest = true
 
   config.assets.js_compressor  = :uglifier
-  config.assets.css_compressor = :scss
+  # precompile error issue: uninitialized constant Sass::Rails::Compressor
+  # See issue here: https://github.com/rails/sass-rails/issues/111
+  #config.assets.css_compressor = :scss 
   config.assets.precompile += %w(application.css app.js topics.css topics.js window.css front.css cpanel.css search.css
   users.css pages.css pages.js notifications.js notifications.css sites.css sites.js notes.css notes.js 
   gfdynamicfeedcontrol.css gfdynamicfeedcontrol.js mobile.css home.css)
