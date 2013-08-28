@@ -31,3 +31,4 @@ tags
 chromedriver.log
 /config/config.yml.default
 /config/config.yml.default
+/config/config.yml
