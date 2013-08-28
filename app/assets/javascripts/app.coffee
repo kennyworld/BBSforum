@@ -90,9 +90,7 @@ window.App =
   # 绑定 @ 回复功能
   atReplyable : (el, logins) ->
     return if logins.length == 0
-    $(el).atWho "@"
-      data : logins
-      tpl : "<li data-value='${login}'>${login} <small>${name}</small></li>"
+    $(el).atWho("@",data : logins,tpl : "<li data-value='${login}'>${login} <small>${name}</small></li>")
 
   initForDesktopView : () ->
     return if typeof(app_mobile) != "undefined"

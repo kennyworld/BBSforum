@@ -4,7 +4,9 @@ require "helpers"
 module RubyChina
   class API < Grape::API
     prefix "api"
-    error_format :json
+    #error_format was deleted, see:https://github.com/intridea/grape/pull/285
+    #error_format :json
+    format :json
 
     helpers APIHelpers
 
