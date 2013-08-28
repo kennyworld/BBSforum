@@ -7,6 +7,8 @@
 #= require bootstrap-tab
 #= require bootstrap-tooltip
 #= require bootstrap-button
+#add for using bootstrap-carousel
+#= require bootstrap-carousel 
 #= require will_paginate
 #= require jquery.timeago
 #= require jquery.timeago.settings

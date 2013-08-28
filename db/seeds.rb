@@ -53,13 +53,6 @@ SiteConfig.save_default("topic_index_sidebar_html",<<-eos
     Hello world.
   </div>
 </div>
-
-<div class="box">
-  <h2>置顶话题</h2>
-  <ul class="content">
-    <li><a href="/topics/1">Foo bar</a></li>
-  </ul>
-</div>
 eos
 )
 
@@ -130,4 +123,6 @@ SiteConfig.save_default("newbie_notices",%(<p>为提高社区质量，防止新�
 # SiteNode.create(:name => "Ruby 开源项目", :sort => 96)
 # SiteNode.create(:name => "国内企业", :sort => 95)
 # SiteNode.create(:name => "其他", :sort => 94)
+
+
 
