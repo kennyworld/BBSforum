@@ -67,10 +67,13 @@ gem "social-share-button", "~> 0.1.0"
 gem 'simple_form', "2.0.2"
 
 # API
-gem 'grape', :github => 'intridea/grape', :branch => 'frontier'
+#gem 'grape', :github => 'intridea/grape', :branch => 'frontier'
+#gem 'grape', '0.4.1'
+gem 'grape', '~> 0.5.0'
+gem 'grape-entity', '~> 0.3.0'
 
 # Mailer
-gem 'postmark-rails', '0.4.1'
+gem 'postmark-rails', '0.5.1'
 
 # Google Analytics performance
 gem 'garelic', '0.0.2'
