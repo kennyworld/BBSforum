@@ -197,7 +197,10 @@ class MarkdownTopicConverter < MarkdownConverter
         if MdEmoji::EMOJI.include?(emoji)
           file_name    = "#{emoji.gsub('+', 'plus')}.png"
 
-          %{<img src="#{upload_url}/assets/emojis/#{file_name}" class="emoji" } +
+          # Use local emoji instead of remote(upload server)
+          # %{<img src="#{upload_url}/assets/emojis/#{file_name}" class="emoji" } +
+          #  %{title="#{emoji_code}" alt="" />}
+          %{<img src="/assets/emojis/#{file_name}" class="emoji" } +
             %{title="#{emoji_code}" alt="" />}
         else
           emoji_code
